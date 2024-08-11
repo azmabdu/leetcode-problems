@@ -2,7 +2,7 @@ package problems.medium;
 
 import java.util.Arrays;
 
-public class TwoSum2 {
+public class TwoSumTwo {
 
     public static void main(String[] args) {
         // Example array of sorted numbers and target sum
