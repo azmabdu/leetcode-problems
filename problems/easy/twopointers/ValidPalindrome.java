@@ -1,8 +1,8 @@
-package problems.easy;
+package problems.easy.twopointers;
 
 /**
  * 125. Valid Palindrome
- * https://leetcode.com/problems/valid-palindrome
+ * <a href="https://leetcode.com/problems/valid-palindrome">...</a>
  */
 public class ValidPalindrome {
 

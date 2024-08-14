@@ -1,17 +1,14 @@
-package problems.easy;
+package problems.easy.arrays;
 
 import java.util.Arrays;
 
 public class MergeSortedArray {
     /**
-     * 88. problems.easy.MergeSortedArray - https://leetcode.com/problems/merge-sorted-array/description/
-     *
+     * 88. problems.easy.arrays.MergeSortedArray - <a href="https://leetcode.com/problems/merge-sorted-array/description/">...</a>
      * The problem requires merging two sorted arrays into one sorted array.
-     *
      * 1. Brute-force method:
      *    - Combine all elements from nums2 into nums1.
      *    - Sort nums1 after combining to get the final sorted array.
-     *
      * 2. Optimal method:
      *    - Since nums1 has a total length of m + n, where the last n elements are zeroes,
      *      we can start filling nums1 from the end.
@@ -20,11 +17,9 @@ public class MergeSortedArray {
      *    - Continue this process, and if there are any remaining elements in nums2,
      *      place them in the beginning of nums1.
      */
-
     public static void main(String[] args) {
         int[] nums1 = {1, 2, 3, 0, 0, 0};
         int[] nums2 = {2, 5, 6};
-
 
         mergeOptimal(nums1, 3, nums2, 3);
 //        mergeBruteForce(nums1, 3, nums2, 3);

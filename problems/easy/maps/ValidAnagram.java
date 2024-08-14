@@ -1,10 +1,10 @@
-package problems.easy;
+package problems.easy.maps;
 
 import java.util.HashMap;
 import java.util.Map;
 
 /**
- * 242. ValidAnagram: https://leetcode.com/problems/valid-anagram
+ * 242. ValidAnagram: <a href="https://leetcode.com/problems/valid-anagram">...</a>
  */
 public class ValidAnagram {
     public static void main(String[] args) {
@@ -28,7 +28,6 @@ public class ValidAnagram {
 
         return count1.equals(count2);
     }
-
 
     private static void count(Map<Character, Integer> charCountMap, String str) {
         for (char c : str.toCharArray()) {

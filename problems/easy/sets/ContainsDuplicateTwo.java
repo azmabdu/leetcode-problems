@@ -1,11 +1,11 @@
-package problems.easy;
+package problems.easy.sets;
 
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
 /**
- * 219. https://leetcode.com/problems/contains-duplicate-ii
+ * 219. <a href="https://leetcode.com/problems/contains-duplicate-ii">...</a>
  */
 public class ContainsDuplicateTwo {
     public static void main(String[] args) {

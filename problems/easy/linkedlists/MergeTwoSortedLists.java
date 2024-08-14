@@ -1,9 +1,10 @@
-package problems.easy;
+package problems.easy.linkedlists;
+
+import problems.core.ListNode;
 
 public class MergeTwoSortedLists {
     /**
-     * 21. problems.easy.MergeTwoSortedLists - https://leetcode.com/problems/merge-two-sorted-lists/description/
-     *
+     * 21. problems.easy.linkedlist.MergeTwoSortedLists - <a href="https://leetcode.com/problems/merge-two-sorted-lists/description/">...</a>
      * Problem description:
      * You are given the heads of two sorted linked lists list1 and list2.
      * Merge the two lists into one sorted list.
@@ -11,15 +12,6 @@ public class MergeTwoSortedLists {
      * Return the head of the merged linked list.
      *
      */
-
-    // Utility method to print the elements of a linked list
-    public static void printList(ListNode head) {
-        // Traverse through the linked list and print each node's value
-        while (head != null) {
-            System.out.print(head.val + " ");
-            head = head.next;  // Move to the next node
-        }
-    }
 
     public static void main(String[] args) {
         // Create first sorted linked list: 4 -> 7 -> 9
@@ -36,7 +28,7 @@ public class MergeTwoSortedLists {
         ListNode mergedList = mergeTwoLists(list1, list2);
 
         // Print the merged linked list
-        printList(mergedList);
+        mergedList.printList(mergedList);
     }
 
     // Method to merge two sorted linked lists
@@ -71,14 +63,5 @@ public class MergeTwoSortedLists {
 
         // Return the head of the merged list (skip the dummy node)
         return dummy.next;
-    }
-
-    // Definition for a singly-linked list node
-    public static class ListNode {
-        int val;  // Value of the node
-        ListNode next;  // Pointer to the next node
-        ListNode() {}  // Default constructor
-        ListNode(int val) { this.val = val; }  // Constructor with value
-        ListNode(int val, ListNode next) { this.val = val; this.next = next; }  // Constructor with value and next node
     }
 }

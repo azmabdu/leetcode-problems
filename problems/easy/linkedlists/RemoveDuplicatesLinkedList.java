@@ -1,4 +1,6 @@
-package problems.easy;
+package problems.easy.linkedlists;
+
+import problems.core.ListNode;
 
 public class RemoveDuplicatesLinkedList {
     public static void main(String[] args) {
@@ -9,7 +11,7 @@ public class RemoveDuplicatesLinkedList {
         list1.next.next.next.next = new ListNode(3);
 
         ListNode res = deleteDuplicates(list1);
-        printList(res);
+        res.printList(res);
     }
 
     /**
@@ -26,25 +28,6 @@ public class RemoveDuplicatesLinkedList {
         }
 
         return head;
-    }
-
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {}
-
-        ListNode(int val) {this.val = val;}
-
-        ListNode(int val, ListNode next) {this.val = val;this.next = next;}
-    }
-
-    public static void printList(ListNode head) {
-        // Traverse through the linked list and print each node's value
-        while (head != null) {
-            System.out.print(head.val + " ");
-            head = head.next;  // Move to the next node
-        }
     }
 
 }

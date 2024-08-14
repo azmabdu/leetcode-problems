@@ -1,12 +1,11 @@
-package problems.easy;
+package problems.easy.sets;
 
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
 /**
- * 217. https://leetcode.com/problems/contains-duplicate
- *
+ * 217. <a href="https://leetcode.com/problems/contains-duplicate">...</a>
  * This class provides a solution for the "Contains Duplicate" problem, where the goal is to determine
  * if there are any duplicate elements in an array.
  */
