@@ -1,4 +1,4 @@
-package problems.core;
+package core;
 
 public class ListNode {
     public int val;

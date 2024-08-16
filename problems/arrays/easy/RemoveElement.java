@@ -1,4 +1,4 @@
-package problems.easy.arrays;
+package problems.arrays.easy;
 
 public class RemoveElement {
     public static void main(String[] args) {

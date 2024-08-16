@@ -1,4 +1,4 @@
-package problems.easy.sets;
+package problems.sets.easy;
 
 import java.util.Arrays;
 import java.util.HashSet;

@@ -1,6 +1,6 @@
-package problems.easy.linkedlists;
+package problems.linkedlists.easy;
 
-import problems.core.ListNode;
+import core.ListNode;
 
 public class ReverseLinkedList {
     public static void main(String[] args) {

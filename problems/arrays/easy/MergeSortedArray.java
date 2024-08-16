@@ -1,10 +1,10 @@
-package problems.easy.arrays;
+package problems.arrays.easy;
 
 import java.util.Arrays;
 
 public class MergeSortedArray {
     /**
-     * 88. problems.easy.arrays.MergeSortedArray - <a href="https://leetcode.com/problems/merge-sorted-array/description/">...</a>
+     * 88. problems.arrays.easy.MergeSortedArray - <a href="https://leetcode.com/problems/merge-sorted-array/description/">...</a>
      * The problem requires merging two sorted arrays into one sorted array.
      * 1. Brute-force method:
      *    - Combine all elements from nums2 into nums1.

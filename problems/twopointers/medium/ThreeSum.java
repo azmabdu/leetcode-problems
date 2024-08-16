@@ -1,4 +1,4 @@
-package problems.medium;
+package problems.twopointers.medium;
 
 import java.util.ArrayList;
 import java.util.Arrays;

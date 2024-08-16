@@ -1,4 +1,4 @@
-package problems.easy.twopointers;
+package problems.twopointers.easy;
 
 /**
  * 125. Valid Palindrome
