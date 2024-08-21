@@ -17,6 +17,7 @@ public class LongestConsecutiveElements {
         int longestConsecutive = longestConsecutiveBruteForce(nums);  // Find longest consecutive sequence using brute-force method
         int longestConsecutiveOptimal = longestConsecutive(nums);  // Find longest consecutive sequence using optimal method
 
+        System.out.println(longestConsecutive);
         System.out.println(longestConsecutiveOptimal);  // Output the result
     }
 
