@@ -13,7 +13,7 @@ public class ReverseLinkedList {
 
         // Reversing the linked list iteratively and printing the result
         ListNode node1 = reverseListIterative(list1);
-        node1.printList(node1);
+        ListNode.printList(node1);
 
         // Reversing the linked list recursively (currently commented out)
         // ListNode node2 = reverseListNodeRecursive(list1);

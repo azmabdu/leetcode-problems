@@ -11,7 +11,7 @@ public class RemoveDuplicatesLinkedList {
         list1.next.next.next.next = new ListNode(3);
 
         ListNode res = deleteDuplicates(list1);
-        res.printList(res);
+        ListNode.printList(res);
     }
 
     /**
