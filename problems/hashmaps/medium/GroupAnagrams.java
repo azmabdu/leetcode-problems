@@ -1,4 +1,4 @@
-package problems.maps.medium;
+package problems.hashmaps.medium;
 
 import java.util.*;
 

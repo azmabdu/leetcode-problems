@@ -1,4 +1,4 @@
-package problems.maps.easy;
+package problems.hashmaps.easy;
 
 import java.util.HashMap;
 import java.util.Map;
