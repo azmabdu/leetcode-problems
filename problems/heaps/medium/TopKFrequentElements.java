@@ -1,4 +1,4 @@
-package problems.arrays.medium;
+package problems.heaps.medium;
 
 import java.util.*;
 
