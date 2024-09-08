@@ -1,4 +1,4 @@
-package problems.maths.medium;
+package problems.floyds.medium;
 
 public class FindTheDuplicateNumber {
     public static void main(String[] args) {
