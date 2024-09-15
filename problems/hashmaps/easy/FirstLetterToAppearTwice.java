@@ -40,7 +40,7 @@ public class FirstLetterToAppearTwice {
             if (charSeen[c - 'a']) {
                 return c;
             }
-            charSeen[c- 'a'] = true;
+            charSeen[c - 'a'] = true;
         }
 
         return ' ';
