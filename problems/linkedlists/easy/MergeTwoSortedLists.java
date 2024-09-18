@@ -28,7 +28,7 @@ public class MergeTwoSortedLists {
         ListNode mergedList = mergeTwoLists(list1, list2);
 
         // Print the merged linked list
-        mergedList.printList(mergedList);
+        ListNode.printList(mergedList);
     }
 
     // Method to merge two sorted linked lists
