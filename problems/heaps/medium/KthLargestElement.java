@@ -9,7 +9,9 @@ public class KthLargestElement {
     public static void main(String[] args) {
         int[] nums = new int[] {3,2,1,5,6,4};
         int kthLargest = findKthLargestWithHeap(nums, 2);
+        int kthLargestWithSorting = findKthLargestWithSorting(nums, 2);
         System.out.println(kthLargest);
+        System.out.println(kthLargestWithSorting);
     }
 
     public static int findKthLargestWithSorting(int[] nums, int k) {
@@ -34,6 +36,6 @@ public class KthLargestElement {
             }
         }
 
-        return heap.peek();
+        return heap.isEmpty() ? 0 : heap.peek();
     }
 }
