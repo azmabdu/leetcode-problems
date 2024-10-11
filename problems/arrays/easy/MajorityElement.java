@@ -42,7 +42,11 @@ public class MajorityElement {
             if (count == 0) {
                 res = num;
             }
-            count += num == res ? 1 : -1;
+            if (num == res) {
+                count++;
+            } else {
+                count--;
+            }
         }
 
         return res;
