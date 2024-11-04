@@ -30,13 +30,18 @@ public class TopKFrequentElements {
     }
 
     public static int[] topKFrequentWithBucketList(int[] nums, int k) {
+        // Create List of List where elements are stored by frequency, length is with nums + 1 (if all elements is 0, then it is nums.length + 1)
         List<Integer>[] bucket = new List[nums.length + 1];
+
+        // Create hashmap to store by key value pair
         Map<Integer, Integer> frequencyMap = new HashMap<>();
 
+        // Loop over elements and update frequencies
         for (int num : nums) {
             frequencyMap.put(num, frequencyMap.getOrDefault(num, 0) + 1);
         }
 
+        // Loop over hashmap, add elements to specific list inside of list by frequency
         for (Map.Entry<Integer, Integer> entry : frequencyMap.entrySet()) {
             int frequency = entry.getValue();
             if (bucket[frequency] == null) {
@@ -45,6 +50,7 @@ public class TopKFrequentElements {
             bucket[frequency].add(entry.getKey());
         }
 
+        // Loop through the list from the end
         List<Integer> result = new ArrayList<>();
         for (int i = bucket.length - 1; i >= 0 && result.size() < k; i--) {
             if (bucket[i] != null) {
@@ -52,6 +58,7 @@ public class TopKFrequentElements {
             }
         }
 
+        // Convert Arraylist to just array
         int[] topKFrequent = new int[k];
         for (int i = 0; i < k; i++) {
             topKFrequent[i] = result.get(i);
